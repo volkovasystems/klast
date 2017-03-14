@@ -1,0 +1,47 @@
+{
+  "name": "klast",
+  "version": "0.0.0",
+  "description": "Flat string HTML class attribute construction through key evaluation.",
+  "main": "klast.js",
+  "support": "klast.support.js",
+  "deploy": "klast.deploy.js",
+  "browser": "klast.deploy.js",
+  "scripts": {
+    "build": "babel klast.js --out-file klast.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha klast-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/klast.git"
+  },
+  "keywords": [
+    "flat",
+    "string",
+    "html",
+    "class",
+    "attribute",
+    "construction",
+    "key",
+    "evaluation",
+    "klast"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/klast/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/klast#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "kley": "^0.3.0",
+    "raze": "^0.22.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.0",
+    "source-map-loader": "^0.2.0",
+    "webpack": "^2.2.1"
+  }
+}
