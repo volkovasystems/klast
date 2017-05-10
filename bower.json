@@ -1,6 +1,6 @@
 {
   "name": "klast",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Flat string HTML class attribute construction through key evaluation.",
   "main": "klast.deploy.js",
   "support": "klast.support.js",
@@ -29,7 +29,7 @@
     "tests"
   ],
   "dependencies": {
-    "kley": "^0.6.0",
-    "raze": "^0.27.0"
+    "kley": "^0.7.0",
+    "raze": "^0.29.0"
   }
 }
