@@ -1,36 +1,32 @@
 {
-  "name": "klast",
-  "version": "0.6.0",
-  "description": "Flat string HTML class attribute construction through key evaluation.",
-  "main": "klast.deploy.js",
-  "support": "klast.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "flat",
-    "string",
-    "html",
-    "class",
-    "attribute",
-    "construction",
-    "key",
-    "evaluation",
-    "klast"
-  ],
-  "homepage": "https://github.com/volkovasystems/klast",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "kley": "^0.9.0",
-    "raze": "^0.34.0"
-  }
+	"name": "klast",
+	"version": "0.6.0",
+	"description": "Flat string HTML class attribute construction through key evaluation.",
+	"main": "klast.deploy.js",
+	"support": "klast.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"flat",
+		"string",
+		"html",
+		"class",
+		"attribute",
+		"construction",
+		"key",
+		"evaluation",
+		"klast"
+	],
+	"homepage": "https://github.com/volkovasystems/klast",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
