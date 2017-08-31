@@ -66,6 +66,15 @@ const klast = require( "./klast.js" );
 
 describe( "klast", ( ) => {
 
+	describe( "`klast( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`", ( ) => {
+		it( "should be equal to 'world yeah ugh hello'", ( ) => {
+
+			assert.equal( klast( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } ),
+				"world yeah ugh hello" );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

@@ -28,5 +28,9 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"kley": "^0.9.0",
+		"raze": "^0.34.0"
+	}
 }

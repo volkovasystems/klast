@@ -70,6 +70,15 @@ const path = require( "path" );
 
 describe( "klast", ( ) => {
 
+	describe( "`klast( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`", ( ) => {
+		it( "should be equal to 'world yeah ugh hello'", ( ) => {
+
+			assert.equal( klast( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } ),
+				"world yeah ugh hello" );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -79,6 +88,15 @@ describe( "klast", ( ) => {
 
 describe( "klast", ( ) => {
 
+	describe( "`klast( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`", ( ) => {
+		it( "should be equal to 'world yeah ugh hello'", ( ) => {
+
+			assert.equal( klast( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } ),
+				"world yeah ugh hello" );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -87,6 +105,24 @@ describe( "klast", ( ) => {
 //: @bridge:
 
 describe( "klast", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`klast( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`", ( ) => {
+		it( "should be equal to 'world yeah ugh hello'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return klast( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } );
+				}
+
+			).value;
+
+			assert.equal( result, "world yeah ugh hello" );
+
+		} );
+	} );
 
 } );
 

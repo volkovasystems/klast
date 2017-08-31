@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-31T05:11:46.482Z",
+	"end": "2017-08-31T05:12:26.414Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "klast",
+			"duration": 0,
+			"start": "2017-08-31T05:12:26.113Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "klast",
+			"duration": 120,
+			"start": "2017-08-31T05:12:26.114Z",
+			"end": "2017-08-31T05:12:26.234Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-31T05:12:26.115Z",
+					"end": "2017-08-31T05:12:26.115Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "klast",
+					"associatedTest": "should be equal to 'world yeah ugh hello'"
+				},
+				{
+					"start": "2017-08-31T05:12:26.233Z",
+					"end": "2017-08-31T05:12:26.234Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "klast",
+					"associatedTest": "should be equal to 'world yeah ugh hello'"
+				},
+				{
+					"start": "2017-08-31T05:12:26.234Z",
+					"end": "2017-08-31T05:12:26.234Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "klast"
+				}
+			]
+		},
+		{
+			"name": "`klast( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`",
+			"duration": 120,
+			"start": "2017-08-31T05:12:26.114Z",
+			"end": "2017-08-31T05:12:26.234Z",
+			"tests": [
+				{
+					"name": "should be equal to 'world yeah ugh hello'",
+					"start": "2017-08-31T05:12:26.115Z",
+					"end": "2017-08-31T05:12:26.233Z",
+					"duration": 118,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
